@@ -2,7 +2,6 @@
 
 For Kerala Blockchain Academy CED programme.
 
-
 ## 🛠 Built With
 
 <div align="left">
@@ -16,14 +15,15 @@ For Kerala Blockchain Academy CED programme.
 <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/DEMYSTIF/DEMYSTIF/main/assets/icons/tailwindcss.svg" width="36" height="36" alt="TailwindCSS" /></a>
 </div>
 
-
 ## ⚙️ Run Locally
 
 Run the blockchain simulation (ganache):
 
 ```bash
 ganache -i 5777
-``` 
+```
+
+Also, run the IPFS Desktop application in parallel.
 
 Clone the project:
 
@@ -37,10 +37,22 @@ Install dependencies:
 npm install
 ```
 
-Deploy the contract using Hardhat:
+Test the contract using Hardhat:
 
 ```bash
-npx hardhat run scripts/deploy.js
+npm run test
+```
+
+Measure the contract coverage:
+
+```bash
+npm run coverage
+```
+
+Add a 'defaultNetwork' in hardhat.config.js and deploy the contract:
+
+```bash
+npm run deploy
 ```
 
 Run the development server:
@@ -49,7 +61,7 @@ Run the development server:
 npm run dev
 ```
 
-Enable cors in IPFS config and restart the application:
+Enable cors in IPFS config and restart IPFS Desktop:
 
 ```bash
 "API": {
@@ -63,22 +75,19 @@ Enable cors in IPFS config and restart the application:
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
 ## License
 
 Distributed under the MIT License.
-
 
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again! 
+Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/<feature_name>`)
 3. Commit your Changes (`git commit -m '<feature_name>_added'`)
 4. Push to the Branch (`git push origin feature/<feature_name>`)
 5. Open a Pull Request
-
