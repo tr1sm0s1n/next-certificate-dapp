@@ -4,8 +4,8 @@ pragma solidity 0.8.17;
 contract Cert {
     address admin;
 
-    event Issued(uint, string);
-    event Uploaded(uint, bytes);
+    event Issued(uint256, string);
+    event Uploaded(uint256, bytes);
 
     constructor() {
         admin = msg.sender;
@@ -23,11 +23,11 @@ contract Cert {
         string date;
     }
 
-    mapping(uint => Certificate) public Certificates;
-    mapping(uint => bytes) public Documents;
+    mapping(uint256 => Certificate) public Certificates;
+    mapping(uint256 => bytes) public Documents;
 
     function issueCertificate(
-        uint _id,
+        uint256 _id,
         string memory _name,
         string memory _course,
         string memory _grade,
@@ -37,7 +37,7 @@ contract Cert {
         emit Issued(_id, _date);
     }
 
-    function uploadDocument(uint _id, bytes memory _hash) public onlyAdmin {
+    function uploadDocument(uint256 _id, bytes memory _hash) public onlyAdmin {
         Documents[_id] = _hash;
         emit Uploaded(_id, _hash);
     }
