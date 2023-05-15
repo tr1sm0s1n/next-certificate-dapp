@@ -1,6 +1,6 @@
 # Next-Certificate-DApp
 
-For Kerala Blockchain Academy CED programme.
+Ethereum Certificate DApp made for educational purposes.
 
 ## 🛠 Built With
 
@@ -17,51 +17,52 @@ For Kerala Blockchain Academy CED programme.
 
 ## ⚙️ Run Locally
 
-Run the blockchain simulation (ganache):
+Run the blockchain simulation (ganache)
 
 ```bash
 ganache -i 5777
 ```
 
-Also, run the IPFS Desktop application in parallel.
+Also, run the IPFS Desktop application in parallel
 
-Clone the project:
+Clone the project
 
 ```bash
 git clone https://github.com/DEMYSTIF/next-certificate-dapp.git
+cd next-certificate-dapp
 ```
 
-Install dependencies:
+Install dependencies
 
 ```bash
 npm install
 ```
 
-Test the contract using Hardhat:
+Test the contract using Hardhat
 
 ```bash
 npm run test
 ```
 
-Measure the contract coverage:
+Measure the contract coverage
 
 ```bash
 npm run coverage
 ```
 
-Add a 'defaultNetwork' in hardhat.config.js and deploy the contract:
+Add a 'defaultNetwork' in hardhat.config.js and deploy the contract
 
 ```bash
 npm run deploy
 ```
 
-Run the development server:
+Run the development server
 
 ```bash
 npm run dev
 ```
 
-Enable cors in IPFS config and restart IPFS Desktop:
+Enable cors in IPFS config and restart IPFS Desktop
 
 ```bash
 "API": {
@@ -73,13 +74,13 @@ Enable cors in IPFS config and restart IPFS Desktop:
 },
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
 
-## License
+## 📜 License
 
 Distributed under the MIT License.
 
-## Contributing
+## 🎗️ Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
