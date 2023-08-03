@@ -37,7 +37,7 @@ export default function Upload() {
       body: JSON.stringify(result),
     })
     console.log(await response.json())
-    alert(`Document for ID: ${formData.id} uploaded successfully!`)
+    alert(`Document for ID: ${id} uploaded successfully!`)
     Router.push('/')
   }
 
